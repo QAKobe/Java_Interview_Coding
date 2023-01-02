@@ -24,5 +24,13 @@ public class String_RemoveExtraSpaces {
 
     }
 
+    public static void main(String[] args) {
+
+        String str = String_RemoveExtraSpaces.removeExtraSpace("I love    Java");
+        System.out.println(str);
+
+
+    }
+
 
 }
