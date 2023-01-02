@@ -21,5 +21,9 @@ public class Number_Prime {
 
     }
 
+    public static void main(String[] args) {
 
+        boolean b1 = Number_Prime.primeNumber(21);
+        System.out.println(b1);
+    }
 }
