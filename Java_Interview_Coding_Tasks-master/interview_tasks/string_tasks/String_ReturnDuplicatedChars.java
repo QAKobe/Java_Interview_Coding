@@ -13,18 +13,17 @@ public class String_ReturnDuplicatedChars {
      */
 
 
-
     //solution1
-    public static String test(String str){
+    public static String test(String str) {
         String result = "";
         for (int i = 0; i < str.length(); i++) {
             int frequency = 0;
             for (int j = 0; j < str.length(); j++) {
-                if(str.charAt(i) == str.charAt(j)){
+                if (str.charAt(i) == str.charAt(j)) {
                     frequency++;
                 }
             }
-            if(frequency >1 && !result.contains(""+str.charAt(i))){
+            if (frequency > 1 && !result.contains("" + str.charAt(i))) {
                 result += str.charAt(i);
             }
         }
@@ -32,12 +31,45 @@ public class String_ReturnDuplicatedChars {
     }
 
     //solution2
-    public static String test2(String str){
+    public static String test2(String str) {
         List<String> list = new ArrayList<>();
         String[] arr = str.split("");
-        Arrays.stream(arr).distinct().forEach( a -> {  if( Arrays.stream(arr).filter(b -> b.equals(a)).count()>1){ list.add(a);}} );
+        Arrays.stream(arr).distinct().forEach(a -> {
+            if (Arrays.stream(arr).filter(b -> b.equals(a)).count() > 1) {
+                list.add(a);
+            }
+        });
         return list.toString();
     }
 
+    public static void main(String[] args) {
+
+
+        // Sorting array
+        String str = String_ReturnDuplicatedChars.test("inteerrrviiew");
+        System.out.println(str);
+
+        int[] nums = {2, 4, 9, 6, 3, 1};
+
+        for (int i = 0; i < nums.length; i++) {
+            int temp = 0;
+            for (int j = i+1; j <nums.length; j++) {
+
+                if (nums[i] > nums[j]){
+
+                    temp = nums[i];
+                    nums[i] = nums[j];
+                    nums[j] = temp;
+
+                }
+
+            }
+
+        }
+        System.out.println(Arrays.toString(nums));
+    }
 
 }
+
+
+

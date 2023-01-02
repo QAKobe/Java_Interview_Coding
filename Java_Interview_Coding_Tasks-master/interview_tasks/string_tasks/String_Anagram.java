@@ -40,5 +40,30 @@ public class String_Anagram {
         return a.equals(b);
     }
 
+    public static void main(String[] args) {
+
+
+        String[] str1 = {"a", "b", "c"};
+        String[] str2 = {"c", "a", "b"};
+
+//        Arrays.sort(str1);
+//        Arrays.sort(str2);
+
+        if (str1.length == str2.length){
+
+            for (int i = 0; i <= str1.length-1 ; i++) {
+
+                for (int j = 0; j <= str2.length-1 ; j++) {
+
+                    if (str1[i].equals(str2[j])){
+
+                        System.out.println("");
+
+                    }
+                }
+            }
+        }
+    }
+
 
 }
