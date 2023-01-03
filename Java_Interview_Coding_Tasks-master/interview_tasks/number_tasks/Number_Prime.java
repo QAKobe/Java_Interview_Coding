@@ -20,4 +20,11 @@ public class Number_Prime {
         return true;
 
     }
+
+    public static void main(String[] args) {
+
+        boolean b1 = Number_Prime.primeNumber(22);
+        System.out.println(b1);
+
+    }
 }
