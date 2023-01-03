@@ -28,6 +28,13 @@ public class Map_FrequencyOfCharacters {
 
     }
 
+    public static void main(String[] args) {
+
+       Map_FrequencyOfCharacters.FrequencyTest("asdfggg");
+
+
+    }
+
 
 
 }
