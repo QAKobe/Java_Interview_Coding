@@ -18,5 +18,13 @@ public class String_RemoveDuplicates {
         return result;
     }
 
+    public static void main(String[] args) {
+
+        String removedString = String_RemoveDuplicates.removeDup("aaddcc");
+        System.out.println(removedString);
+
+
+    }
+
 
 }
